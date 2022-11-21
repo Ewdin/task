@@ -18,8 +18,8 @@
         <div class="d-flex gap-4 justify-content-center">
         <div th:each="task : ${tasks}" class="card" style="...">
             <div th:switch="${task.done}">
-                <img th:case="true" class="card-img-top" src="img/done.png" alt="Card image cap" style="...">
-                <img th:case="false" class="card-img-top" src="img/pending.png" alt="Card image cap" style="...">
+                <img th:case="true" class="card-img-top" src="img/done.png" height="100" alt="Card image cap" >
+                <img th:case="false" class="card-img-top" src="img/pending.png" height="100" alt="Card image cap" >
             </div>
 
             <div class="card-body">
